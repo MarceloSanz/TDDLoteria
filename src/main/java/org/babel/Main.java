@@ -1,10 +1,12 @@
-package org.example;
+package org.babel;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "org.babel")
 public class Main {
     public static void main(String[] args) {
-        SpringBootApplication.run
+        SpringApplication.run(Main.class, args);
+
     }
 }
